@@ -13,18 +13,7 @@ $utilities: map-merge(
 );
 @import "bootstrap/scss/utilities/api";
 @import "./base/base.scss";
-@each $color, $value in $theme-colors {
-  .btn-#{$color}{
-    &:hover{
-      // background-color: mix($accent-300, $value, 100%);
-      background-color: $accent-300;
-    }
-    &:disabled{
-      background-color: mix($neutral-300, $value, 100%);
-      border-color: transparent;
-    }
-  }
-}
+@import "./components/button.scss";
 
 @import './layout/header.scss';
 @import './layout/footer.scss';
