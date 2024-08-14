@@ -1,0 +1,16 @@
+$utilities: map-merge(
+  $utilities, (
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      ( responsive: true ),
+    ),
+  )
+);
+$utilities: map-merge(
+  $utilities, (
+    "color": map-merge(
+      map-get($utilities, "color"),
+      ( responsive: true ),
+    ),
+  )
+);

@@ -4,23 +4,75 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>index</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-      <section>
-        <div class="container py-lg-10 py-8 px-0">
+        <!-- hot-active -->
+        <section class="bg-primary-200">
+          <div class="container">
+            <div class="d-flex align-items-center flex-column hito position-relative py-lg-10 py-8">
+              <h2 class="text-md-primary-400 text-secondary-200 fs-lg-4 fs-7 mb-lg-4 mb-2 fw-bold">\ 母親節強檔活動 / </h2>
+              <h3 class="text-gray-500 fs-lg-2 fs-4 mb-lg-4 mb-5 fw-bold">家庭訂閱方案限時 7 折</h3>
+              <ul class="list-unstyled text-gray-400 mb-lg-7 mb-5">
+                <li class="d-flex align-items-center mb-3">
+                  <i class="bi bi-check me-2 fs-lg-4"></i>
+                  <span>
+                    每月最新文章無限閱讀
+                  </span>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <i class="bi bi-check me-2 fs-lg-4"></i>
+                  <span>
+                    專屬會員限定內容
+                  </span>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <i class="bi bi-check me-2 fs-lg-4"></i>
+                  <span>
+                    定期電子報
+                  </span>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <i class="bi bi-check me-2 fs-lg-4"></i>
+                  <span>
+                    年度精選禮物
+                  </span>
+                </li>
+                <li class="d-flex align-items-center mb-3">
+                  <i class="bi bi-check me-2 fs-lg-4"></i>
+                  <span>
+                    24 /7 優先客戶服務
+                  </span>
+                </li>
+                <li class="d-flex align-items-center">
+                  <i class="bi bi-check me-2 fs-lg-4"></i>
+                  <span>
+                    為每個成員量身打造專屬行程
+                  </span>
+                </li>
+              </ul>
+              <a href="#" class="h4 btn btn-secondary-200 text-white rounded-pill py-lg-3 px-lg-5 py-2 px-4 fs-lg-5 fs-7">我想了解</a>
+            </div>
+          </div> 
+        </section>
+    <section>
+      <div class="container py-lg-10 py-8">
+        <div class="row">
           <div class="d-lg-flex d-block text-center">
             <p class="me-auto fs-lg-2 fs-4 fw-bold">想看什麼主題由你決定！</p>
             <div class="text-lg-end text-center">
               <p class="fs-lg-4 fs-5 fw-bold mb-lg-3 mb-6">歡迎投稿與我們分享</p>
-              <a href="#" class="btn btn-secondary-200 text-white rounded-pill py-lg-3 px-lg-5 py-2 px-4 fs-lg-5 fs-7">聯絡我們</a>
+              <a href="#" class="h4 btn btn-secondary-200 text-white rounded-pill py-lg-3 px-lg-5 py-2 px-4 fs-lg-5 fs-7">聯絡我們</a>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
     <%- include('./layout/footer'); -%>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
