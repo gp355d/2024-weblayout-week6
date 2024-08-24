@@ -1,6 +1,6 @@
 import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
-const swiper = new Swiper(".mySwiper", {
+const swiper = new Swiper(".featuredArticle", {
   slidesPerView: 1,
   slidesPerGroup: 2,
   spaceBetween: 48,
