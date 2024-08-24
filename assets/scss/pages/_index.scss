@@ -87,6 +87,7 @@
     background-color: initial !important;
   }
 }
+
 .membersOnly {
   background: #e8e3da;
   padding: 4px 8px;
@@ -110,7 +111,63 @@
     margin-bottom: 0;
   }
 }
-
+//enjoyLife
+.enjoyLife{
+  .card-title{
+    margin-bottom: 36px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 24px;
+    }
+  }
+  .card-img-top{
+      margin-bottom: 36px;
+      @include media-breakpoint-down(md) {
+        margin-bottom: 24px;
+      }
+    }
+  .card-title{
+    font-size: 52px;
+    @include media-breakpoint-down(md) {
+      font-size: 40px;
+    }
+  }
+  ul{
+    margin-bottom: 36px;
+    @include media-breakpoint-down(md) {
+      margin-bottom: 24px;
+    }
+  }
+}
+.view-more{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  @include media-breakpoint-down(md) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+.life{
+  .swiper-slide {
+    width: 33.333%;
+    border-bottom: 0;
+    @include media-breakpoint-down(md) {
+      flex-shrink: 1;
+      width: 100% !important;
+    }
+    .life-card{
+      width: 100%;
+      &:hover li:first-child{
+        color: $accent-200;
+      }
+    }
+  }
+.swiper-wrapper {
+  height: 100%;
+  @include media-breakpoint-down(md) {
+    flex-direction: column;
+  }
+}
+}
 
 .form{
   form{
