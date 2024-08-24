@@ -10,10 +10,9 @@ const swiper = new Swiper(".mySwiper", {
   },
   pagination: {
     el: ".swiper-pagination-custom",
-    type: "fraction"
+    type: "fraction",
   },
   breakpoints: {
-
     768: {
       slidesPerView: 2,
       slidesPerGroup: 2,
@@ -22,7 +21,7 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 //文章內容頁
-const swiper3 = new Swiper(".article", {
+const swiper3 = new Swiper(".extendArticle", {
   slidesPerView: 1,
   slidesPerGroup: 1,
   spaceBetween: 24,
@@ -35,15 +34,10 @@ const swiper3 = new Swiper(".article", {
     type: "fraction"
   },
   breakpoints: {
-    576: {
-      slidesPerView: 1,
-      slidesPerGroup: 1,
-    },
     768: {
       slidesPerView: 1,
       slidesPerGroup: 0,
     },
-
   },
 });
 console.log("Hello world!");
