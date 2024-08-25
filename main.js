@@ -39,6 +39,22 @@ const swiper0 = new Swiper(".life", {
     },
   },
 });
+//生活提案
+const swiper2 = new Swiper(".lifeProposal", {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 0,
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+      slidesPerGroup: 0,
+    },
+    992: {
+      slidesPerView: 2,
+      slidesPerGroup: 0,
+    },
+  },
+});
 //文章內容頁
 const swiper3 = new Swiper(".extendArticle", {
   slidesPerView: 1,
