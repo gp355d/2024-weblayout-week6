@@ -4,7 +4,24 @@
 .fw-600{
   font-weight: 600;
 }
-
+//banner
+.bannerBg{
+  background-image: url(../images/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 621px;
+  @include media-breakpoint-down(md) {
+    background-image: url(../images/banner-sm.png);
+    height: 551px;
+  }
+  .banner-title{
+    padding-left: 60px;
+    @include media-breakpoint-down(md) {
+      padding-left: 0;
+    }
+  }
+}
+//hotTopic
 .hotTopic{
   height: 200px;
   background-size: cover;
