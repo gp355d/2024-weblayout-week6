@@ -1,0 +1,20 @@
+//about
+.aboutBanner{
+  @include media-breakpoint-down(md) {
+    & > .container{
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .bannerBg{
+    background-size: cover;
+    background-position: bottom;
+    height: 454px;
+    border-radius: 4px;
+    @include media-breakpoint-down(md) {
+      background-image: url(../images/about-banner-sm.png);
+      height: 240px;
+    }
+  }
+}

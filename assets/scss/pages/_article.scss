@@ -1,0 +1,78 @@
+//articleContent
+.articleBanner{
+  @include media-breakpoint-down(md) {
+    & > .container{
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .bannerBg{
+    background-size: cover;
+    background-position: bottom;
+    height: 454px;
+    border-radius: 4px;
+    @include media-breakpoint-down(md) {
+      background-image: url(../images/article-banner-sm.png);
+      height: 240px;
+    }
+  }
+}
+.breadcrumb{
+  font-weight: 600;
+  margin-bottom: 20px;
+  // letter-spacing: 0.5em;
+  @include media-breakpoint-down(md) {
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+}
+.breadcrumb-item{
+  &.active{
+    &:hover{
+      color: $accent-200;
+    }
+  }
+  &:hover{
+    color: $neutral-400;
+  }
+}
+.date{
+  margin-bottom: 40px;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 28px;
+  }
+}
+.tag a{
+   color: $primary-400;
+   background-color: $primary-300;
+   padding: 4px 8px;
+   &:hover{
+    color: $white;
+    background-color: $primary-400;
+   }
+}
+.extendArticle{
+  .swiper-slide{
+    width: 100%;
+    border-bottom: 0;
+  }
+  .swiper-wrapper {
+    flex-direction: column;
+    @include media-breakpoint-down(md) {
+      flex-direction: row;
+    }
+    .card:hover .card-title{
+      color: $accent-200;
+    }
+  }
+}
+.extendRead{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @include media-breakpoint-down(md) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+}
