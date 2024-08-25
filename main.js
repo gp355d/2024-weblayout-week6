@@ -19,6 +19,26 @@ const swiper = new Swiper(".featuredArticle", {
     },
   },
 });
+//大家都在看
+const swiper00 = new Swiper(".everyoneLook", {
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  spaceBetween: 24,
+  breakpoints: {
+    576: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+    },
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 1,
+    },
+    992: {
+      slidesPerView: 1,
+      slidesPerGroup: 0,
+    },
+  },
+});
 //品味生活
 const swiper0 = new Swiper(".life", {
   slidesPerView: 1,
