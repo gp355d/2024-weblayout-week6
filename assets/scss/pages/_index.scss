@@ -326,3 +326,20 @@
   }
 }
 
+//subscription
+.originPrice{
+  font-size: 22px;
+  color: $gray-500;
+  font-weight: bold;
+  @include media-breakpoint-down(md) {
+    font-size: 20px;
+  }
+}
+.subscription{
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @include media-breakpoint-down(md) {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+}
