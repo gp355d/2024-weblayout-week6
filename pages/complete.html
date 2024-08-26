@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>付款成功</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8 form">
+          <h2 class="text-secondary-200 fs-lg-1 fs-3 mb-lg-7 mb-5 fw-900 text-center"><i class="bi bi-check2-circle me-2"></i>付款成功</h2>
+          <form class="bg-white p-lg-7 p-5  border border-primary-300">
+            <h3 class="fs-lg-4 fs-5 fw-900 pb-5 border-bottom">訂購資訊</h3>
+            <div class="py-5 mb-lg-7 mb-5 border-bottom">
+              <div class="d-flex justify-content-between align-items-center fw-bold mb-2 fs-lg-5 fs-7">
+                <span class="fw-900">輕量型方案</span>
+                <span class="">NT 1,188</span>
+              </div>
+              <span class="text-gray-400 fw-bold mb-lg-7 mb-5 d-block">年繳</span>
+              <div class="d-flex justify-content-between align-items-center fw-bold mb-lg-2 mb-3 text-gray-400">
+                <span class="">開始日</span>
+                <span class="fw-bold">2024 / 5 / 1</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center fw-bold text-gray-400">
+                <span class="">終止日</span>
+                <span class="fw-bold">2025 / 5 / 1</span>
+              </div>
+            </div>
+            <button type="submit" class="d-flex align-items-center justify-content-center btn btn-secondary-200 w-100 rounded-pill py-lg-3 py-2 text-white">
+              <span class="fs-lg-5 fs-7 fw-900">瀏覽文章</span>
+              <i class="bi bi-arrow-right fs-lg-4 fs-5 ms-2"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
