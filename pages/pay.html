@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>付款頁面</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb fs-lg-7 fs-8 py-2">
+          <li class="breadcrumb-item"><a href="#">首頁</a></li>
+          <li class="breadcrumb-item"><a href="#">訂閱方案</a></li>
+          <li class="breadcrumb-item active" aria-current="page">付款</li>
+        </ol>
+      </nav>
+    </div>
+    <section class="subscription form">
+      <div class="container">
+        <h2 class="text-gray-500 fw-900 mb-lg-9 mb-7 fs-lg-1 fs-3">付款</h2>
+        <div class="row">
+          <div class="col-lg-7">
+            <form class="bg-white p-lg-7 p-5 border-lg border-0 border-primary-300 mb-5">
+                <h2 class="text-black fs-lg-4 fs-5 mb-lg-7 mb-5 fw-900">購買人</h2>
+                <div class="mb-3">
+                  <label for="account" class="form-label text-gray-500 fw-bold mb-lg-2 mb-1">姓名</label>
+                  <input type="text" class="form-control py-3 rounded-0 border-0" id="account" aria-describedby="emailHelp" placeholder="請輸入會員姓名">
+                </div>
+                <div class="mb-3">
+                  <label for="passwd" class="form-label text-gray-500 fw-bold mb-lg-2 mb-1">密碼</label>
+                  <input type="password" class="form-control py-3 rounded-0 border-0" id="passwd" placeholder="請輸入密碼">
+                </div>
+                <div class="mb-5">
+                  <label for="account" class="form-label text-gray-500 fw-bold mb-lg-2 mb-1">電子信箱</label>
+                  <input type="email" class="form-control py-3 rounded-0 border-0" id="account" aria-describedby="emailHelp" placeholder="請輸入電子信箱">
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label text-gray-500" for="flexCheckChecked">
+                    記住我的資訊
+                  </label>
+                </div>
+            </form>
+            <form class="bg-white p-lg-7 p-5 border-lg border-0 border-primary-300 mb-lg-0 mb-5">
+                <h2 class="text-black fs-lg-4 fs-5 mb-lg-7 mb-5 fw-900">付款方式</h2>
+                <div class="mb-3">
+                  <label for="account" class="form-label text-gray-500 fw-bold mb-lg-3 mb-1">Pay With</label>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      信用卡
+                    </label>
+                  </div>
+                </div>
+                <div class="mb-5">
+                  <label for="passwd" class="form-label text-gray-500 fw-bold mb-2">信用卡號碼</label>
+                  <input type="number" class="form-control py-3 rounded-0 border-0" id="passwd" placeholder="1234 5678 1234 5678">
+                </div>
+                <div class="mb-5">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="">
+                        <label for="passwd" class="form-label text-gray-500 fw-bold mb-2">過期日</label>
+                        <input type="date" class="form-control py-3 rounded-0 border-0" id="passwd" placeholder="ＭＭ/YY">
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="">
+                        <label for="passwd" class="form-label text-gray-500 fw-bold mb-2">認證碼</label>
+                        <input type="number" class="form-control py-3 rounded-0 border-0" id="passwd" placeholder="CVV">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              <div class="form-check col-12">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label text-gray-500" for="flexCheckChecked">
+                  記住卡片資訊
+                </label>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-5">
+            <form class="bg-white p-lg-7 p-5 border border-secondary-200">
+                <h2 class="text-secondary-200 fs-4 pb-lg-7 pb-5 fw-900 border-bottom">訂單資訊</h2>
+                <div class="py-5 mb-lg-7 mb-5 lightCase border-bottom">
+                    <div class="d-flex justify-content-between align-items-center fw-bold mb-2  fs-lg-5 fs-7">
+                      <span class="fw-900">輕量型方案</span>
+                      <span class="">NT 1,188</span>
+                    </div>
+                    <span class="text-gray-400 fw-bold">年繳</span>
+                </div>
+                <div class="pb-lg-7 pb-5 border-bottom">
+                  <label for="passwd" class="form-label text-gray-500 fw-bold mb-lg-2 mb-1">折扣碼</label>
+                  <div class="d-flex justify-content-between align-items-center couponCode">
+                      <input type="password" class="form-control rounded-0 py-3 border-0" id="passwd" placeholder="請輸入折扣碼">
+                    <div class="couponSend">
+                      <button type="submit" class="rounded-pill py-2 px-4 w-100 border-0 text-secondary">
+                        套用
+                      </button>    
+                    </div>
+                  </div>
+                </div>
+                <div class="py-5 border-bottom mb-lg-7 mb-5 fw-bold">
+                  <div class="d-flex justify-content-between mb-2">
+                      <span>小計</span>
+                      <span>NT 1,188</span>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                      <span>折扣</span>
+                      <span>0</span>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between mb-lg-7 mb-5 fw-bold">
+                    <span>總計</span>
+                    <span class="fs-lg-3 fs-4">NT 1,188</span>
+                </div>
+                <button type="button" class="d-flex align-items-center justify-content-center btn btn-secondary-200 w-100 rounded-pill py-lg-3 py-2 text-white mb-lg-7 mb-5">
+                  <span class="fs-lg-5 fs-7 fw-900">立即付款</span>
+                  <i class="bi bi-arrow-right fs-lg-4 fs-5 ms-2"></i>
+                </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

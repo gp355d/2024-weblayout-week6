@@ -343,3 +343,19 @@
     padding-bottom: 60px;
   }
 }
+//pay
+.lightCase{
+  padding-right: 22px;
+  @include media-breakpoint-down(md) {
+    padding-right: 0;
+  }
+}
+.couponCode{
+  input{
+    width: 70%;
+    margin-right: 12px;
+  }
+}
+.couponSend{
+  width: 30%;
+}
