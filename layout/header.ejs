@@ -10,13 +10,16 @@
       <button class="navbar-toggler border-0 p-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon fs-4"></span>
       </button>
-      <div class="navbar-collapse collapse show" id="navbarSupportedContent">
+      <div class="navbar-collapse collapse" id="navbarSupportedContent">
         <div class="text-end d-lg-none container">
       </div>
         <form class="d-lg-flex me-auto" role="search">
-          <div class="position-relative mb-lg-0 mb-5 ">
-            <input type="text" class="form-control rounded-pill px-4 py-2 bg-white" placeholder="搜尋文章">
-            <i class="bi bi-search position-absolute top-50 end-0 translate-middle-y me-4 text-secondary-200 fs-4"></i>
+          <div class="input-group w-100 my-3">
+            <label class="search-text input-group-text ps-4 border-0 bg-white" for="search">搜尋文章</label>
+            <input type="text" class="form-control py-2 ps-0 border-0 bg-white" id="search" aria-label="Amount (to the nearest dollar)">
+            <a href="#" class="input-group-text searchStyle pe-14 border-0 bg-white">
+              <i class="bi bi-search text-secondary-200 fs-4"></i>
+            </a>
           </div>
         </form>
         <ul class="navbar-nav mb-2 mb-lg-0 d-lg-flex align-items-lg-center d-block">
