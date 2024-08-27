@@ -1,5 +1,5 @@
 *, *::before, *::after {
-  outline: solid 1px;
+  // outline: solid 1px;
 }
 .eng-font {
   font-family: "Newsreader", sans-serif;
@@ -18,9 +18,13 @@ a {
 h1,h2,h3,h4,h5,h6 {
   letter-spacing: 0.1em;
   line-height: 1.2;    
+  margin-bottom: 0;
 }
 
 p {
   letter-spacing: 0.05em;
+  margin-bottom: 0;
+}
+ul{
   margin-bottom: 0;
 }
