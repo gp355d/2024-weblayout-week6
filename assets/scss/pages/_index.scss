@@ -350,11 +350,33 @@
     padding-bottom: 60px;
   }
 }
+.feature{
+  li{
+    margin-bottom: 24px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    @include media-breakpoint-down(md) {
+      margin-bottom: 28px;
+    }
+  }
+}
+.subscriptionBtn{
+  color: $secondary;
+}
 //pay
 .lightCase{
   padding-right: 22px;
   @include media-breakpoint-down(md) {
     padding-right: 0;
+  }
+}
+.setBtn{
+  background: $light;
+  color: $secondary;
+  &:hover{
+    color: $white;
+    background-color: $accent-200;
   }
 }
 .couponCode{
