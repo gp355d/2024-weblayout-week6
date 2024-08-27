@@ -43,6 +43,15 @@
     margin-bottom: 28px;
   }
 }
+.article-hide-mode {
+  width: 100%;
+  mask-image: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  max-height: 614px;
+  overflow-y: hidden;
+  @include media-breakpoint-down(md) {
+    height: 536px;
+  }
+}
 .tag a{
    color: $primary-400;
    background-color: $primary-300;
